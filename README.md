@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Skip Hire Selection App
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+A responsive web application for selecting skip sizes with real-time pricing and availability.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Toggle selection (click to select/unselect)
+- Displays pricing with VAT breakdown
+- Shows waste type restrictions
+- Fully responsive design
+- TypeScript support
+- API integration
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. Core Logic
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Toggle Selection**: Click cards to select/unselect with visual feedback
+- **API Data**: Fetches skips by location (postcode/area)
+- **Type Safety**: Full TypeScript typing for all components and API responses
 
-## Learn More
+### 3. UI Implementation
 
-To learn more about Next.js, take a look at the following resources:
+- Clean card-based design
+- Responsive grid (1-3 columns based on screen size)
+- Visual indicators for:
+  - Selected state (blue border + scale)
+  - Waste restrictions (✓/✗ icons)
+  - Pricing (VAT breakdown)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How to Use
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run development server: `npm run dev`
